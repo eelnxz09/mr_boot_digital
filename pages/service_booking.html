@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service Booking - MR BOOT Digital | Book Premium Shoe Care Services in Pune</title>
+    <meta name="description" content="Book your professional shoe care service with MR BOOT Digital. Choose from cleaning, repair, restoration, or custom shoe making with instant quotes and convenient pickup." />
+    <link rel="stylesheet" href="../css/main.css" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fmrbootdi1244back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-craft sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="homepage.html" class="flex items-center space-x-2">
+                        <svg class="w-10 h-10 text-primary" viewBox="0 0 40 40" fill="currentColor">
+                            <path d="M8 32c0-2.2 1.8-4 4-4h16c2.2 0 4 1.8 4 4v4H8v-4z"/>
+                            <path d="M10 28h20c1.1 0 2-.9 2-2V14c0-1.1-.9-2-2-2H10c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2z"/>
+                            <circle cx="20" cy="8" r="4"/>
+                        </svg>
+                        <span class="font-playfair font-bold text-xl text-primary">MR BOOT</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors duration-300 px-3 py-2">Home</a>
+                        <a href="service_portfolio.html" class="text-text-secondary hover:text-primary transition-colors duration-300 px-3 py-2">Services</a>
+                        <a href="service_booking.html" class="text-primary font-semibold border-b-2 border-primary px-3 py-2">Book Service</a>
+                        <a href="transformation_gallery.html" class="text-text-secondary hover:text-primary transition-colors duration-300 px-3 py-2">Gallery</a>
+                        <a href="about_our_craft.html" class="text-text-secondary hover:text-primary transition-colors duration-300 px-3 py-2">Our Craft</a>
+                        <a href="contact_location.html" class="text-text-secondary hover:text-primary transition-colors duration-300 px-3 py-2">Contact</a>
+                        <a href="customer_dashboard.html" class="text-text-secondary hover:text-primary transition-colors duration-300 px-3 py-2">Dashboard</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text-secondary hover:text-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-secondary-200">
+                    <a href="homepage.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Home</a>
+                    <a href="service_portfolio.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Services</a>
+                    <a href="service_booking.html" class="block px-3 py-2 text-primary font-semibold">Book Service</a>
+                    <a href="transformation_gallery.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Gallery</a>
+                    <a href="about_our_craft.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Our Craft</a>
+                    <a href="contact_location.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Contact</a>
+                    <a href="customer_dashboard.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Dashboard</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-secondary-100 overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-5"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+            <div class="text-center">
+                <h1 class="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 leading-tight">
+                    Book Your <br />
+                    <span class="text-accent">Premium Shoe Care</span>
+                </h1>
+                <p class="text-lg md:text-xl text-text-secondary mb-8 max-w-3xl mx-auto">
+                    Experience seamless booking with instant quotes, convenient pickup scheduling, and transparent pricing for all your shoe care needs.
+                </p>
+                <div class="bg-white rounded-xl p-4 shadow-craft-lg max-w-md mx-auto">
+                    <div class="flex items-center justify-center space-x-2 text-success">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span class="font-semibold">Free Pickup & Delivery in Pune</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Progress Bar -->
+    <section class="py-6 bg-white border-b border-secondary-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-center space-x-8">
+                <div class="flex items-center space-x-2">
+                    <div id="step-1-indicator" class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm">1</div>
+                    <span id="step-1-text" class="font-semibold text-primary">Service Selection</span>
+                </div>
+                <div class="w-16 h-1 bg-secondary-200">
+                    <div id="progress-1-2" class="h-full bg-secondary-200 transition-all duration-500"></div>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <div id="step-2-indicator" class="w-8 h-8 bg-secondary-200 text-text-secondary rounded-full flex items-center justify-center font-bold text-sm">2</div>
+                    <span id="step-2-text" class="text-text-secondary">Photo & Details</span>
+                </div>
+                <div class="w-16 h-1 bg-secondary-200">
+                    <div id="progress-2-3" class="h-full bg-secondary-200 transition-all duration-500"></div>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <div id="step-3-indicator" class="w-8 h-8 bg-secondary-200 text-text-secondary rounded-full flex items-center justify-center font-bold text-sm">3</div>
+                    <span id="step-3-text" class="text-text-secondary">Schedule & Contact</span>
+                </div>
+                <div class="w-16 h-1 bg-secondary-200">
+                    <div id="progress-3-4" class="h-full bg-secondary-200 transition-all duration-500"></div>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <div id="step-4-indicator" class="w-8 h-8 bg-secondary-200 text-text-secondary rounded-full flex items-center justify-center font-bold text-sm">4</div>
+                    <span id="step-4-text" class="text-text-secondary">Confirmation</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Step 1: Service Selection -->
+    <section id="step-1" class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-3xl md:text-4xl font-bold text-primary mb-4">
+                    Choose Your Service Category
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Select the type of service you need, and we'll show you detailed options and pricing
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <!-- Shoe Laundry -->
+                <div class="service-card bg-white rounded-xl p-6 shadow-craft hover:shadow-craft-lg transition-all duration-300 cursor-pointer border-2 border-transparent" data-service="laundry">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-xl font-semibold text-primary mb-2 text-center">Shoe Laundry</h3>
+                    <p class="text-text-secondary text-center mb-4">Deep cleaning, stain removal, and odor treatment</p>
+                    <div class="text-center">
+                        <div class="text-lg font-bold text-accent mb-2">Starting ₹299</div>
+                        <div class="text-sm text-text-secondary">2-3 days turnaround</div>
+                    </div>
+                </div>
+
+                <!-- Repair & Restoration -->
+                <div class="service-card bg-white rounded-xl p-6 shadow-craft hover:shadow-craft-lg transition-all duration-300 cursor-pointer border-2 border-transparent" data-service="repair">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-xl font-semibold text-primary mb-2 text-center">Repair & Restoration</h3>
+                    <p class="text-text-secondary text-center mb-4">Sole replacement, stitching, and hardware repair</p>
+                    <div class="text-center">
+                        <div class="text-lg font-bold text-accent mb-2">Starting ₹599</div>
+                        <div class="text-sm text-text-secondary">5-7 days turnaround</div>
+                    </div>
+                </div>
+
+                <!-- Custom Making -->
+                <div class="service-card bg-white rounded-xl p-6 shadow-craft hover:shadow-craft-lg transition-all duration-300 cursor-pointer border-2 border-transparent" data-service="custom">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4v2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-xl font-semibold text-primary mb-2 text-center">Custom Making</h3>
+                    <p class="text-text-secondary text-center mb-4">Bespoke design, fitting, and creation process</p>
+                    <div class="text-center">
+                        <div class="text-lg font-bold text-accent mb-2">Starting ₹8,999</div>
+                        <div class="text-sm text-text-secondary">3-6 weeks turnaround</div>
+                    </div>
+                </div>
+
+                <!-- Specialty Services -->
+                <div class="service-card bg-white rounded-xl p-6 shadow-craft hover:shadow-craft-lg transition-all duration-300 cursor-pointer border-2 border-transparent" data-service="specialty">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-xl font-semibold text-primary mb-2 text-center">Specialty Services</h3>
+                    <p class="text-text-secondary text-center mb-4">Leather conditioning and color restoration</p>
+                    <div class="text-center">
+                        <div class="text-lg font-bold text-accent mb-2">Starting ₹799</div>
+                        <div class="text-sm text-text-secondary">1-4 days turnaround</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Service Options (Initially Hidden) -->
+            <div id="service-details" class="hidden">
+                <!-- Laundry Details -->
+                <div id="laundry-details" class="service-details hidden">
+                    <div class="bg-white rounded-xl shadow-craft-lg p-8 mb-8">
+                        <h3 class="font-playfair text-2xl font-semibold text-primary mb-6 text-center">Shoe Laundry Options</h3>
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div class="service-option border-2 border-secondary-200 rounded-lg p-6 cursor-pointer hover:border-primary transition-all" data-option="basic-cleaning" data-price="299">
+                                <h4 class="font-semibold text-primary mb-2">Basic Cleaning</h4>
+                                <div class="text-2xl font-bold text-accent mb-3">₹299</div>
+                                <ul class="text-sm text-text-secondary space-y-1 mb-4">
+                                    <li>• Surface cleaning & brushing</li>
+                                    <li>• Basic stain removal</li>
+                                    <li>• Deodorization</li>
+                                    <li>• Protective spray</li>
+                                </ul>
+                                <div class="text-xs text-text-secondary">Perfect for: Canvas shoes, basic sneakers</div>
+                            </div>
+                            <div class="service-option border-2 border-primary rounded-lg p-6 cursor-pointer relative" data-option="premium-cleaning" data-price="399">
+                                <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-white px-3 py-1 rounded-full text-xs">Most Popular</div>
+                                <h4 class="font-semibold text-primary mb-2">Premium Cleaning</h4>
+                                <div class="text-2xl font-bold text-accent mb-3">₹399</div>
+                                <ul class="text-sm text-text-secondary space-y-1 mb-4">
+                                    <li>• Deep interior cleaning</li>
+                                    <li>• Advanced stain treatment</li>
+                                    <li>• Leather conditioning</li>
+                                    <li>• UV protection coating</li>
+                                </ul>
+                                <div class="text-xs text-text-secondary">Perfect for: Leather shoes, business footwear</div>
+                            </div>
+                            <div class="service-option border-2 border-secondary-200 rounded-lg p-6 cursor-pointer hover:border-primary transition-all" data-option="luxury-cleaning" data-price="499">
+                                <h4 class="font-semibold text-primary mb-2">Luxury Cleaning</h4>
+                                <div class="text-2xl font-bold text-accent mb-3">₹499</div>
+                                <ul class="text-sm text-text-secondary space-y-1 mb-4">
+                                    <li>• Hand-detailed cleaning</li>
+                                    <li>• Premium material treatment</li>
+                                    <li>• Color restoration</li>
+                                    <li>• Extended guarantee</li>
+                                </ul>
+                                <div class="text-xs text-text-secondary">Perfect for: Designer shoes, luxury brands</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repair Details -->
+                <div id="repair-details" class="service-details hidden">
+                    <div class="bg-white rounded-xl shadow-craft-lg p-8 mb-8">
+                        <h3 class="font-playfair text-2xl font-semibold text-primary mb-6 text-center">Repair & Restoration Services</h3>
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div class="service-option border-2 border-secondary-200 rounded-lg p-6 cursor-pointer hover:border-primary transition-all" data-option="sole-replacement" data-price="899">
+                                <h4 class="font-semibold text-primary mb-2">Sole Replacement</h4>
+                                <div class="text-2xl font-bold text-accent mb-3">₹899+</div>
+                                <ul class="text-sm text-text-secondary space-y-1 mb-4">
+                                    <li>• Complete sole reconstruction</li>
+                                    <li>• Premium material matching</li>
+                                    <li>• Heel reconstruction</li>
+                                    <li>• 6-month warranty</li>
+                                </ul>
+                            </div>
+                            <div class="service-option border-2 border-secondary-200 rounded-lg p-6 cursor-pointer hover:border-primary transition-all" data-option="stitching-repair" data-price="399">
+                                <h4 class="font-semibold text-primary mb-2">Stitching Repair</h4>
+                                <div class="text-2xl font-bold text-accent mb-3">₹399+</div>
+                                <ul class="text-sm text-text-secondary space-y-1 mb-4">
+                                    <li>• Seam reinforcement</li>
+                                    <li>• Thread color matching</li>
+                                    <li>• Hand-stitching restoration</li>
+                                    <li>• Structural strengthening</li>
+                                </ul>
+                            </div>
+                            <div class="service-option border-2 border-secondary-200 rounded-lg p-6 cursor-pointer hover:border-primary transition-all" data-option="hardware-repair" data-price="299">
+                                <h4 class="font-semibold text-primary mb-2">Hardware Repair</h4>
+                                <div class="text-2xl font-bold text-accent mb-3">₹299+</div>
+                                <ul class="text-sm text-text-secondary space-y-1 mb-4">
+                                    <li>• Zipper replacement</li>
+                                    <li>• Buckle restoration</li>
+                                    <li>• Eyelet reinforcement</li>
+                                    <li>• Velcro replacement</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom Details -->
+                <div id="custom-details" class="service-details hidden">
+                    <div class="bg-white rounded-xl shadow-craft-lg p-8 mb-8">
+                        <h3 class="font-playfair text-2xl font-semibold text-primary mb-6 text-center">Custom Shoe Making Packages</h3>
+                        <div class="grid md:grid-cols-3 gap-6">
+                            <div class="service-option border-2 border-secondary-200 rounded-lg p-6 cursor-pointer hover:border-primary transition-all" data-option="essential-custom" data-price="8999">
+                                <h4 class="font-semibold text-primary mb-2">Essential Custom</h4>
+                                <div class="text-2xl font-bold text-accent mb-3">₹8,999</div>
+                                <ul class="text-sm text-text-secondary space-y-1 mb-4">
+                                    <li>• Standard leather options</li>
+                                    <li>• Basic customization</li>
+                                    <li>• 4-6 weeks delivery</li>
+                                    <li>• One fitting session</li>
+                                </ul>
+                            </div>
+                            <div class="service-option border-2 border-primary rounded-lg p-6 cursor-pointer relative" data-option="premium-custom" data-price="12999">
+                                <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-white px-3 py-1 rounded-full text-xs">Recommended</div>
+                                <h4 class="font-semibold text-primary mb-2">Premium Custom</h4>
+                                <div class="text-2xl font-bold text-accent mb-3">₹12,999</div>
+                                <ul class="text-sm text-text-secondary space-y-1 mb-4">
+                                    <li>• Premium leather selection</li>
+                                    <li>• Complete customization</li>
+                                    <li>• 3-4 weeks delivery</li>
+                                    <li>• Multiple fitting sessions</li>
+                                </ul>
+                            </div>
+                            <div class="service-option border-2 border-secondary-200 rounded-lg p-6 cursor-pointer hover:border-primary transition-all" data-option="luxury-custom" data-price="18999">
+                                <h4 class="font-semibold text-primary mb-2">Luxury Bespoke</h4>
+                                <div class="text-2xl font-bold text-accent mb-3">₹18,999</div>
+                                <ul class="text-sm text-text-secondary space-y-1 mb-4">
+                                    <li>• Exotic leather options</li>
+                                    <li>• Hand-stitched details</li>
+                                    <li>• 2-3 weeks delivery</li>
+                                    <li>• Personal design consultation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Specialty Details -->
+                <div id="specialty-details" class="service-details hidden">
+                    <div class="bg-white rounded-xl shadow-craft-lg p-8 mb-8">
+                        <h3 class="font-playfair text-2xl font-semibold text-primary mb-6 text-center">Specialty Treatment Services</h3>
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <div class="service-option border-2 border-secondary-200 rounded-lg p-6 cursor-pointer hover:border-primary transition-all" data-option="leather-conditioning" data-price="599">
+                                <h4 class="font-semibold text-primary mb-2">Leather Conditioning</h4>
+                                <div class="text-2xl font-bold text-accent mb-3">₹599</div>
+                                <ul class="text-sm text-text-secondary space-y-1 mb-4">
+                                    <li>• Premium conditioning oils</li>
+                                    <li>• Crack prevention treatment</li>
+                                    <li>• Flexibility restoration</li>
+                                    <li>• UV protection coating</li>
+                                </ul>
+                            </div>
+                            <div class="service-option border-2 border-accent rounded-lg p-6 cursor-pointer relative" data-option="waterproofing" data-price="799">
+                                <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-accent text-white px-3 py-1 rounded-full text-xs">Monsoon Special</div>
+                                <h4 class="font-semibold text-primary mb-2">Waterproofing</h4>
+                                <div class="text-2xl font-bold text-accent mb-3">₹799</div>
+                                <ul class="text-sm text-text-secondary space-y-1 mb-4">
+                                    <li>• Nano-coating technology</li>
+                                    <li>• Breathable protection</li>
+                                    <li>• Salt stain prevention</li>
+                                    <li>• 6-month guarantee</li>
+                                </ul>
+                            </div>
+                            <div class="service-option border-2 border-secondary-200 rounded-lg p-6 cursor-pointer hover:border-primary transition-all" data-option="color-restoration" data-price="699">
+                                <h4 class="font-semibold text-primary mb-2">Color Restoration</h4>
+                                <div class="text-2xl font-bold text-accent mb-3">₹699</div>
+                                <ul class="text-sm text-text-secondary space-y-1 mb-4">
+                                    <li>• Color matching technology</li>
+                                    <li>• Fade correction</li>
+                                    <li>• Scuff mark removal</li>
+                                    <li>• Protective finish</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add-on Services -->
+                <div class="bg-gradient-to-r from-secondary-50 to-primary-50 rounded-xl p-8 mb-8">
+                    <h3 class="font-playfair text-xl font-semibold text-primary mb-6 text-center">Additional Services</h3>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <label class="flex items-center space-x-3 p-4 bg-white rounded-lg cursor-pointer hover:shadow-craft transition-all">
+                            <input type="checkbox" class="addon-checkbox w-5 h-5 text-primary" data-addon="express" data-price="200" />
+                            <div>
+                                <div class="font-semibold text-primary">Express Service (+₹200)</div>
+                                <div class="text-sm text-text-secondary">50% faster turnaround</div>
+                            </div>
+                        </label>
+                        <label class="flex items-center space-x-3 p-4 bg-white rounded-lg cursor-pointer hover:shadow-craft transition-all">
+                            <input type="checkbox" class="addon-checkbox w-5 h-5 text-primary" data-addon="pickup-delivery" data-price="99" />
+                            <div>
+                                <div class="font-semibold text-primary">Premium Pickup (+₹99)</div>
+                                <div class="text-sm text-text-secondary">Same-day pickup available</div>
+                            </div>
+                        </label>
+                        <label class="flex items-center space-x-3 p-4 bg-white rounded-lg cursor-pointer hover:shadow-craft transition-all">
+                            <input type="checkbox" class="addon-checkbox w-5 h-5 text-primary" data-addon="eco-friendly" data-price="150" />
+                            <div>
+                                <div class="font-semibold text-primary">Eco-Friendly (+₹150)</div>
+                                <div class="text-sm text-text-secondary">Organic & sustainable materials</div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Continue Button -->
+                <div class="text-center">
+                    <button id="continue-to-step-2" class="btn-primary px-8 py-4 text-lg disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+                        Continue to Photo Upload
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Step 2: Photo Upload & Details -->
+    <section id="step-2" class="py-16 bg-white hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-3xl md:text-4xl font-bold text-primary mb-4">
+                    Upload Photos & Shoe Details
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Help us provide accurate assessment and personalized service recommendations
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Photo Upload Section -->
+                <div>
+                    <h3 class="font-playfair text-xl font-semibold text-primary mb-6">Upload Shoe Photos</h3>
+                    <div class="bg-surface rounded-xl p-8">
+                        <div id="photo-upload-area" class="border-2 border-dashed border-secondary-300 rounded-lg p-8 text-center mb-6 cursor-pointer hover:border-primary transition-all">
+                            <svg class="w-16 h-16 text-secondary mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"/>
+                            </svg>
+                            <p class="text-text-primary font-semibold mb-2">Drop your shoe photos here or click to browse</p>
+                            <p class="text-text-secondary text-sm mb-4">Upload up to 5 photos (JPG, PNG up to 10MB each)</p>
+                            <input type="file" id="photo-input" class="hidden" accept="image/*" multiple />
+                            <button type="button" class="btn-secondary">Browse Files</button>
+                        </div>
+                        
+                        <div id="photo-preview" class="grid grid-cols-2 md:grid-cols-3 gap-4 hidden">
+                            <!-- Photo previews will be added here dynamically -->
+                        </div>
+
+                        <div class="mt-6 p-4 bg-primary-50 rounded-lg">
+                            <h4 class="font-semibold text-primary mb-2">Photo Tips for Best Assessment:</h4>
+                            <ul class="text-sm text-text-secondary space-y-1">
+                                <li>• Take photos in good lighting</li>
+                                <li>• Include overall view and close-ups of issues</li>
+                                <li>• Show sole, heel, and any damage clearly</li>
+                                <li>• Include both shoes if they're a pair</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shoe Details Form -->
+                <div>
+                    <h3 class="font-playfair text-xl font-semibold text-primary mb-6">Shoe Information</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-primary mb-2">Shoe Brand</label>
+                            <input type="text" id="shoe-brand" class="form-input w-full" placeholder="e.g., Nike, Adidas, Clarks" />
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-primary mb-2">Shoe Type</label>
+                            <select id="shoe-type" class="form-input w-full">
+                                <option value>Select shoe type</option>
+                                <option value="sneakers">Sneakers/Athletic</option>
+                                <option value="formal">Formal/Dress Shoes</option>
+                                <option value="boots">Boots</option>
+                                <option value="sandals">Sandals</option>
+                                <option value="heels">Heels</option>
+                                <option value="casual">Casual Shoes</option>
+                                <option value="loafers">Loafers</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-primary mb-2">Material</label>
+                            <select id="shoe-material" class="form-input w-full">
+                                <option value>Select material</option>
+                                <option value="leather">Leather</option>
+                                <option value="suede">Suede</option>
+                                <option value="canvas">Canvas</option>
+                                <option value="synthetic">Synthetic</option>
+                                <option value="mesh">Mesh</option>
+                                <option value="rubber">Rubber</option>
+                                <option value="fabric">Fabric</option>
+                                <option value="mixed">Mixed Materials</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-primary mb-2">Color</label>
+                            <input type="text" id="shoe-color" class="form-input w-full" placeholder="e.g., Black, Brown, White" />
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-primary mb-2">Number of Pairs</label>
+                            <select id="shoe-pairs" class="form-input w-full">
+                                <option value="1">1 Pair</option>
+                                <option value="2">2 Pairs</option>
+                                <option value="3">3 Pairs</option>
+                                <option value="4">4 Pairs</option>
+                                <option value="5+">5+ Pairs</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-primary mb-2">Specific Issues or Requirements</label>
+                            <textarea id="shoe-issues" class="form-input w-full h-24 resize-none" placeholder="Describe any stains, damage, or specific concerns..."></textarea>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-primary mb-2">Special Instructions</label>
+                            <textarea id="special-instructions" class="form-input w-full h-20 resize-none" placeholder="Any special handling requests or preferences..."></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- AI Assessment Preview -->
+            <div id="ai-assessment" class="mt-12 bg-gradient-to-r from-primary-50 to-accent-50 rounded-xl p-8 hidden">
+                <h3 class="font-playfair text-xl font-semibold text-primary mb-4">AI Assessment Results</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold text-primary mb-2">Recommended Services:</h4>
+                        <div id="recommended-services" class="space-y-2">
+                            <!-- Recommendations will be added here -->
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-primary mb-2">Estimated Cost:</h4>
+                        <div class="text-3xl font-bold text-accent mb-2" id="estimated-cost">₹0</div>
+                        <div class="text-sm text-text-secondary">Final cost confirmed after expert inspection</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="flex justify-between mt-12">
+                <button id="back-to-step-1" class="btn-secondary px-8 py-3">
+                    ← Back to Services
+                </button>
+                <button id="continue-to-step-3" class="btn-primary px-8 py-3">
+                    Continue to Scheduling →
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Step 3: Schedule & Contact Information -->
+    <section id="step-3" class="py-16 bg-surface hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-3xl md:text-4xl font-bold text-primary mb-4">
+                    Schedule Pickup & Contact Details
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Choose your convenient pickup time and provide contact information for service updates
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Scheduling Section -->
+                <div>
+                    <h3 class="font-playfair text-xl font-semibold text-primary mb-6">Pickup Scheduling</h3>
+                    
+                    <!-- Service Area Selection -->
+                    <div class="mb-6">
+                        <label class="block text-sm font-semibold text-primary mb-2">Pickup Area in Pune</label>
+                        <select id="pickup-area" class="form-input w-full">
+                            <option value>Select your area</option>
+                            <option value="koregaon-park">Koregaon Park</option>
+                            <option value="baner">Baner</option>
+                            <option value="hinjewadi">Hinjewadi</option>
+                            <option value="wakad">Wakad</option>
+                            <option value="kothrud">Kothrud</option>
+                            <option value="deccan">Deccan</option>
+                            <option value="camp">Camp</option>
+                            <option value="vishrantwadi">Vishrantwadi</option>
+                            <option value="aundh">Aundh</option>
+                            <option value="hadapsar">Hadapsar</option>
+                            <option value="other">Other Area</option>
+                        </select>
+                    </div>
+
+                    <!-- Date Selection -->
+                    <div class="mb-6">
+                        <label class="block text-sm font-semibold text-primary mb-2">Preferred Pickup Date</label>
+                        <input type="date" id="pickup-date" class="form-input w-full" min />
+                    </div>
+
+                    <!-- Time Slot Selection -->
+                    <div class="mb-6">
+                        <label class="block text-sm font-semibold text-primary mb-2">Preferred Time Slot</label>
+                        <div class="grid grid-cols-2 gap-3">
+                            <label class="flex items-center space-x-2 p-3 border border-secondary-200 rounded-lg cursor-pointer hover:border-primary transition-all">
+                                <input type="radio" name="time-slot" value="morning" class="text-primary" />
+                                <span>Morning (9 AM - 12 PM)</span>
+                            </label>
+                            <label class="flex items-center space-x-2 p-3 border border-secondary-200 rounded-lg cursor-pointer hover:border-primary transition-all">
+                                <input type="radio" name="time-slot" value="afternoon" class="text-primary" />
+                                <span>Afternoon (12 PM - 4 PM)</span>
+                            </label>
+                            <label class="flex items-center space-x-2 p-3 border border-secondary-200 rounded-lg cursor-pointer hover:border-primary transition-all">
+                                <input type="radio" name="time-slot" value="evening" class="text-primary" />
+                                <span>Evening (4 PM - 7 PM)</span>
+                            </label>
+                            <label class="flex items-center space-x-2 p-3 border border-secondary-200 rounded-lg cursor-pointer hover:border-primary transition-all">
+                                <input type="radio" name="time-slot" value="flexible" class="text-primary" />
+                                <span>Flexible</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Calendar View -->
+                    <div class="bg-white rounded-xl p-6 shadow-craft">
+                        <h4 class="font-semibold text-primary mb-4">Available Slots This Week</h4>
+                        <div class="grid grid-cols-7 gap-2 text-center">
+                            <div class="p-2 text-xs font-semibold text-text-secondary">Sun</div>
+                            <div class="p-2 text-xs font-semibold text-text-secondary">Mon</div>
+                            <div class="p-2 text-xs font-semibold text-text-secondary">Tue</div>
+                            <div class="p-2 text-xs font-semibold text-text-secondary">Wed</div>
+                            <div class="p-2 text-xs font-semibold text-text-secondary">Thu</div>
+                            <div class="p-2 text-xs font-semibold text-text-secondary">Fri</div>
+                            <div class="p-2 text-xs font-semibold text-text-secondary">Sat</div>
+                            
+                            <!-- Sample calendar days -->
+                            <div class="p-2 text-sm text-text-secondary">24</div>
+                            <div class="p-2 text-sm bg-success-100 text-success rounded cursor-pointer hover:bg-success-200">25</div>
+                            <div class="p-2 text-sm bg-success-100 text-success rounded cursor-pointer hover:bg-success-200">26</div>
+                            <div class="p-2 text-sm bg-success-100 text-success rounded cursor-pointer hover:bg-success-200">27</div>
+                            <div class="p-2 text-sm bg-success-100 text-success rounded cursor-pointer hover:bg-success-200">28</div>
+                            <div class="p-2 text-sm bg-success-100 text-success rounded cursor-pointer hover:bg-success-200">29</div>
+                            <div class="p-2 text-sm bg-success-100 text-success rounded cursor-pointer hover:bg-success-200">30</div>
+                        </div>
+                        <div class="mt-4 flex items-center space-x-4 text-xs">
+                            <div class="flex items-center space-x-1">
+                                <div class="w-3 h-3 bg-success-100 rounded"></div>
+                                <span>Available</span>
+                            </div>
+                            <div class="flex items-center space-x-1">
+                                <div class="w-3 h-3 bg-error-100 rounded"></div>
+                                <span>Fully Booked</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="font-playfair text-xl font-semibold text-primary mb-6">Contact Information</h3>
+                    
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-primary mb-2">Full Name *</label>
+                            <input type="text" id="customer-name" class="form-input w-full" placeholder="Enter your full name" required />
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-primary mb-2">Phone Number *</label>
+                            <input type="tel" id="customer-phone" class="form-input w-full" placeholder="+91 98765 43210" required />
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-primary mb-2">WhatsApp Number</label>
+                            <input type="tel" id="customer-whatsapp" class="form-input w-full" placeholder="For service updates (if different)" />
+                            <p class="text-xs text-text-secondary mt-1">We'll send booking confirmations and updates via WhatsApp</p>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-primary mb-2">Email Address</label>
+                            <input type="email" id="customer-email" class="form-input w-full" placeholder="your.email@example.com" />
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-primary mb-2">Complete Pickup Address *</label>
+                            <textarea id="pickup-address" class="form-input w-full h-20 resize-none" placeholder="Building name, flat number, street, landmark..." required></textarea>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-semibold text-primary mb-2">Delivery Address</label>
+                            <div class="flex items-center space-x-2 mb-2">
+                                <input type="checkbox" id="same-address" class="w-4 h-4 text-primary" />
+                                <label for="same-address" class="text-sm text-text-secondary">Same as pickup address</label>
+                            </div>
+                            <textarea id="delivery-address" class="form-input w-full h-20 resize-none" placeholder="If different from pickup address..."></textarea>
+                        </div>
+
+                        <!-- Returning Customer Check -->
+                        <div class="bg-secondary-50 rounded-lg p-4">
+                            <label class="flex items-center space-x-2">
+                                <input type="checkbox" id="returning-customer" class="w-4 h-4 text-primary" />
+                                <span class="text-sm text-primary font-semibold">I'm a returning customer</span>
+                            </label>
+                            <p class="text-xs text-text-secondary mt-1">Check this to auto-fill your details from previous orders</p>
+                        </div>
+                    </form>
+
+                    <!-- Communication Preferences -->
+                    <div class="mt-8 bg-white rounded-xl p-6 shadow-craft">
+                        <h4 class="font-semibold text-primary mb-4">Communication Preferences</h4>
+                        <div class="space-y-3">
+                            <label class="flex items-center space-x-2">
+                                <input type="checkbox" class="w-4 h-4 text-primary" checked />
+                                <span class="text-sm">WhatsApp updates on service progress</span>
+                            </label>
+                            <label class="flex items-center space-x-2">
+                                <input type="checkbox" class="w-4 h-4 text-primary" checked />
+                                <span class="text-sm">SMS notifications for pickup/delivery</span>
+                            </label>
+                            <label class="flex items-center space-x-2">
+                                <input type="checkbox" class="w-4 h-4 text-primary" />
+                                <span class="text-sm">Email updates and receipts</span>
+                            </label>
+                            <label class="flex items-center space-x-2">
+                                <input type="checkbox" class="w-4 h-4 text-primary" />
+                                <span class="text-sm">Promotional offers and seasonal discounts</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="flex justify-between mt-12">
+                <button id="back-to-step-2" class="btn-secondary px-8 py-3">
+                    ← Back to Photos
+                </button>
+                <button id="continue-to-step-4" class="btn-primary px-8 py-3">
+                    Review & Confirm →
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Step 4: Confirmation & Payment -->
+    <section id="step-4" class="py-16 bg-white hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-3xl md:text-4xl font-bold text-primary mb-4">
+                    Review & Confirm Your Booking
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Please review all details before confirming your shoe care service booking
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Booking Summary -->
+                <div class="lg:col-span-2">
+                    <!-- Service Summary -->
+                    <div class="bg-surface rounded-xl p-6 mb-6">
+                        <h3 class="font-playfair text-xl font-semibold text-primary mb-4">Service Summary</h3>
+                        <div id="selected-services" class="space-y-4">
+                            <!-- Selected services will be populated here -->
+                        </div>
+                    </div>
+
+                    <!-- Shoe Details Summary -->
+                    <div class="bg-surface rounded-xl p-6 mb-6">
+                        <h3 class="font-playfair text-xl font-semibold text-primary mb-4">Shoe Details</h3>
+                        <div id="shoe-summary" class="grid md:grid-cols-2 gap-4">
+                            <!-- Shoe details will be populated here -->
+                        </div>
+                    </div>
+
+                    <!-- Schedule Summary -->
+                    <div class="bg-surface rounded-xl p-6 mb-6">
+                        <h3 class="font-playfair text-xl font-semibold text-primary mb-4">Pickup Schedule</h3>
+                        <div id="schedule-summary" class="space-y-2">
+                            <!-- Schedule details will be populated here -->
+                        </div>
+                    </div>
+
+                    <!-- Contact Summary -->
+                    <div class="bg-surface rounded-xl p-6">
+                        <h3 class="font-playfair text-xl font-semibold text-primary mb-4">Contact Information</h3>
+                        <div id="contact-summary" class="space-y-2">
+                            <!-- Contact details will be populated here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order Total & Payment -->
+                <div class="lg:col-span-1">
+                    <!-- Price Breakdown -->
+                    <div class="bg-gradient-to-br from-primary-50 to-accent-50 rounded-xl p-6 mb-6 sticky top-24">
+                        <h3 class="font-playfair text-xl font-semibold text-primary mb-4">Price Breakdown</h3>
+                        <div id="price-breakdown" class="space-y-3">
+                            <!-- Price details will be populated here -->
+                        </div>
+                        <div class="border-t border-primary-200 pt-3 mt-3">
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-semibold text-primary">Total Amount:</span>
+                                <span id="total-amount" class="text-2xl font-bold text-accent">₹0</span>
+                            </div>
+                        </div>
+
+                        <!-- Payment Options -->
+                        <div class="mt-6">
+                            <h4 class="font-semibold text-primary mb-3">Payment Options</h4>
+                            <div class="space-y-2">
+                                <label class="flex items-center space-x-2 p-3 border border-secondary-200 rounded-lg cursor-pointer hover:border-primary transition-all">
+                                    <input type="radio" name="payment-method" value="cod" class="text-primary" checked />
+                                    <span>Cash on Delivery</span>
+                                </label>
+                                <label class="flex items-center space-x-2 p-3 border border-secondary-200 rounded-lg cursor-pointer hover:border-primary transition-all">
+                                    <input type="radio" name="payment-method" value="upi" class="text-primary" />
+                                    <span>UPI Payment</span>
+                                </label>
+                                <label class="flex items-center space-x-2 p-3 border border-secondary-200 rounded-lg cursor-pointer hover:border-primary transition-all">
+                                    <input type="radio" name="payment-method" value="card" class="text-primary" />
+                                    <span>Credit/Debit Card</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Terms and Conditions -->
+                        <div class="mt-6">
+                            <label class="flex items-start space-x-2">
+                                <input type="checkbox" id="terms-agreement" class="w-4 h-4 text-primary mt-1" required />
+                                <span class="text-sm text-text-secondary">
+                                    I agree to the <a href="#" class="text-primary hover:underline">Terms & Conditions</a> and 
+                                    <a href="#" class="text-primary hover:underline">Privacy Policy</a>
+                                </span>
+                            </label>
+                        </div>
+
+                        <!-- Confirm Booking Button -->
+                        <button id="confirm-booking" class="w-full mt-6 bg-gradient-to-r from-primary to-primary-600 text-white py-4 rounded-lg font-bold text-lg hover:from-primary-600 hover:to-primary-700 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed" disabled>
+                            Confirm Booking
+                        </button>
+
+                        <!-- Guarantees -->
+                        <div class="mt-6 p-4 bg-white rounded-lg">
+                            <h4 class="font-semibold text-primary mb-2">Our Guarantees</h4>
+                            <ul class="text-xs text-text-secondary space-y-1">
+                                <li>✓ 30-day satisfaction guarantee</li>
+                                <li>✓ Damage protection coverage</li>
+                                <li>✓ Expert craftsmanship assured</li>
+                                <li>✓ Transparent pricing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="flex justify-between mt-8">
+                <button id="back-to-step-3" class="btn-secondary px-8 py-3">
+                    ← Back to Schedule
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl max-w-md w-full p-8 text-center">
+            <div class="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-success" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+            </div>
+            <h3 class="font-playfair text-2xl font-bold text-primary mb-4">Booking Confirmed!</h3>
+            <p class="text-text-secondary mb-6">Thank you for choosing MR BOOT Digital. Your booking has been confirmed and you'll receive updates via WhatsApp.</p>
+            <div class="space-y-2 mb-6">
+                <div class="font-semibold text-primary">Booking ID: <span id="booking-id">MB2025001</span></div>
+                <div class="text-sm text-text-secondary">Pickup: <span id="confirmed-pickup">Tomorrow, 10 AM - 12 PM</span></div>
+            </div>
+            <div class="flex gap-3">
+                <button id="view-dashboard" class="btn-primary flex-1">View Dashboard</button>
+                <button id="close-success" class="btn-secondary flex-1">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-8 h-8 text-accent" viewBox="0 0 40 40" fill="currentColor">
+                            <path d="M8 32c0-2.2 1.8-4 4-4h16c2.2 0 4 1.8 4 4v4H8v-4z"/>
+                            <path d="M10 28h20c1.1 0 2-.9 2-2V14c0-1.1-.9-2-2-2H10c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2z"/>
+                            <circle cx="20" cy="8" r="4"/>
+                        </svg>
+                        <span class="font-playfair font-bold text-xl">MR BOOT</span>
+                    </div>
+                    <p class="text-primary-200 mb-4">
+                        Pune's premier destination for shoe restoration artistry and custom footwear creation.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-primary-300 hover:text-accent transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-primary-300 hover:text-accent transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-primary-300 hover:text-accent transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001 12.017.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="font-playfair text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="service_portfolio.html" class="text-primary-300 hover:text-accent transition-colors">Shoe Laundry</a></li>
+                        <li><a href="service_portfolio.html" class="text-primary-300 hover:text-accent transition-colors">Repair & Restoration</a></li>
+                        <li><a href="service_portfolio.html" class="text-primary-300 hover:text-accent transition-colors">Custom Making</a></li>
+                        <li><a href="service_portfolio.html" class="text-primary-300 hover:text-accent transition-colors">Specialty Services</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-playfair text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="transformation_gallery.html" class="text-primary-300 hover:text-accent transition-colors">Gallery</a></li>
+                        <li><a href="about_our_craft.html" class="text-primary-300 hover:text-accent transition-colors">Our Craft</a></li>
+                        <li><a href="customer_dashboard.html" class="text-primary-300 hover:text-accent transition-colors">Dashboard</a></li>
+                        <li><a href="contact_location.html" class="text-primary-300 hover:text-accent transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Pune Service Areas -->
+                <div>
+                    <h3 class="font-playfair text-lg font-semibold mb-4">Pune Service Areas</h3>
+                    <ul class="space-y-2 text-primary-300">
+                        <li>Koregaon Park</li>
+                        <li>Baner</li>
+                        <li>Hinjewadi</li>
+                        <li>Wakad</li>
+                        <li>Kothrud</li>
+                        <li>Deccan</li>
+                    </ul>
+                    <div class="mt-4">
+                        <p class="text-primary-300 text-sm">📞 +91 98765 43210</p>
+                        <p class="text-primary-300 text-sm">📧 info@mrbootdigital.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-primary-800 mt-8 pt-8 text-center">
+                <p class="text-primary-300">
+                    © 2025 MR BOOT Digital. All Rights Reserved. | Crafted with ❤️ in Pune
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Global booking state
+        let bookingData = {
+            service: null,
+            options: [],
+            addons: [],
+            shoes: {},
+            schedule: {},
+            contact: {},
+            totalPrice: 0
+        };
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Set minimum date for pickup
+        const today = new Date();
+        const tomorrow = new Date(today);
+        tomorrow.setDate(tomorrow.getDate() + 1);
+        document.getElementById('pickup-date').min = tomorrow.toISOString().split('T')[0];
+
+        // Step management
+        const steps = ['step-1', 'step-2', 'step-3', 'step-4'];
+        let currentStep = 0;
+
+        function showStep(stepIndex) {
+            steps.forEach((step, index) => {
+                const element = document.getElementById(step);
+                if (index === stepIndex) {
+                    element.classList.remove('hidden');
+                } else {
+                    element.classList.add('hidden');
+                }
+            });
+            updateProgressBar(stepIndex);
+        }
+
+        function updateProgressBar(stepIndex) {
+            for (let i = 1; i <= 4; i++) {
+                const indicator = document.getElementById(`step-${i}-indicator`);
+                const text = document.getElementById(`step-${i}-text`);
+                
+                if (i <= stepIndex + 1) {
+                    indicator.classList.remove('bg-secondary-200', 'text-text-secondary');
+                    indicator.classList.add('bg-primary', 'text-white');
+                    text.classList.remove('text-text-secondary');
+                    text.classList.add('text-primary', 'font-semibold');
+                } else {
+                    indicator.classList.remove('bg-primary', 'text-white');
+                    indicator.classList.add('bg-secondary-200', 'text-text-secondary');
+                    text.classList.remove('text-primary', 'font-semibold');
+                    text.classList.add('text-text-secondary');
+                }
+                
+                if (i < stepIndex + 1) {
+                    const progress = document.getElementById(`progress-${i}-${i+1}`);
+                    if (progress) {
+                        progress.classList.remove('bg-secondary-200');
+                        progress.classList.add('bg-primary');
+                    }
+                }
+            }
+        }
+
+        // Step 1: Service Selection
+        const serviceCards = document.querySelectorAll('.service-card');
+        const serviceDetails = document.getElementById('service-details');
+
+        serviceCards.forEach(card => {
+            card.addEventListener('click', () => {
+                // Remove active state from all cards
+                serviceCards.forEach(c => {
+                    c.classList.remove('border-primary', 'bg-primary-50');
+                    c.classList.add('border-transparent');
+                });
+                
+                // Add active state to clicked card
+                card.classList.remove('border-transparent');
+                card.classList.add('border-primary', 'bg-primary-50');
+                
+                // Show service details
+                const service = card.dataset.service;
+                bookingData.service = service;
+                showServiceDetails(service);
+                serviceDetails.classList.remove('hidden');
+            });
+        });
+
+        function showServiceDetails(service) {
+            // Hide all service details
+            document.querySelectorAll('.service-details').forEach(detail => {
+                detail.classList.add('hidden');
+            });
+            
+            // Show selected service details
+            document.getElementById(`${service}-details`).classList.remove('hidden');
+        }
+
+        // Service option selection
+        document.addEventListener('click', (e) => {
+            if (e.target.closest('.service-option')) {
+                const option = e.target.closest('.service-option');
+                const parentSection = option.closest('.service-details');
+                
+                // Remove active state from siblings
+                parentSection.querySelectorAll('.service-option').forEach(opt => {
+                    opt.classList.remove('border-primary', 'bg-primary-50');
+                    opt.classList.add('border-secondary-200');
+                });
+                
+                // Add active state to clicked option
+                option.classList.remove('border-secondary-200');
+                option.classList.add('border-primary', 'bg-primary-50');
+                
+                // Update booking data
+                const optionName = option.dataset.option;
+                const price = parseInt(option.dataset.price);
+                bookingData.options = [{ name: optionName, price: price }];
+                
+                updateTotalPrice();
+                enableContinueButton();
+            }
+        });
+
+        // Add-on selection
+        const addonCheckboxes = document.querySelectorAll('.addon-checkbox');
+        addonCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                updateAddons();
+                updateTotalPrice();
+            });
+        });
+
+        function updateAddons() {
+            bookingData.addons = [];
+            addonCheckboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    bookingData.addons.push({
+                        name: checkbox.dataset.addon,
+                        price: parseInt(checkbox.dataset.price)
+                    });
+                }
+            });
+        }
+
+        function updateTotalPrice() {
+            let total = 0;
+            
+            // Add service option price
+            bookingData.options.forEach(option => {
+                total += option.price;
+            });
+            
+            // Add addon prices
+            bookingData.addons.forEach(addon => {
+                total += addon.price;
+            });
+            
+            bookingData.totalPrice = total;
+            
+            // Update display if on confirmation step
+            const totalElement = document.getElementById('total-amount');
+            if (totalElement) {
+                totalElement.textContent = `₹${total}`;
+            }
+        }
+
+        function enableContinueButton() {
+            const continueBtn = document.getElementById('continue-to-step-2');
+            if (bookingData.options.length > 0) {
+                continueBtn.disabled = false;
+                continueBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+            }
+        }
+
+        // Step navigation
+        document.getElementById('continue-to-step-2').addEventListener('click', () => {
+            currentStep = 1;
+            showStep(currentStep);
+        });
+
+        document.getElementById('back-to-step-1').addEventListener('click', () => {
+            currentStep = 0;
+            showStep(currentStep);
+        });
+
+        document.getElementById('continue-to-step-3').addEventListener('click', () => {
+            // Collect shoe information
+            collectShoeData();
+            currentStep = 2;
+            showStep(currentStep);
+        });
+
+        document.getElementById('back-to-step-2').addEventListener('click', () => {
+            currentStep = 1;
+            showStep(currentStep);
+        });
+
+        document.getElementById('continue-to-step-4').addEventListener('click', () => {
+            // Collect contact and schedule information
+            collectContactAndScheduleData();
+            populateConfirmationStep();
+            currentStep = 3;
+            showStep(currentStep);
+        });
+
+        document.getElementById('back-to-step-3').addEventListener('click', () => {
+            currentStep = 2;
+            showStep(currentStep);
+        });
+
+        // Photo upload functionality
+        const photoUploadArea = document.getElementById('photo-upload-area');
+        const photoInput = document.getElementById('photo-input');
+        const photoPreview = document.getElementById('photo-preview');
+
+        photoUploadArea.addEventListener('click', () => {
+            photoInput.click();
+        });
+
+        photoUploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            photoUploadArea.classList.add('border-primary', 'bg-primary-50');
+        });
+
+        photoUploadArea.addEventListener('dragleave', () => {
+            photoUploadArea.classList.remove('border-primary', 'bg-primary-50');
+        });
+
+        photoUploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            photoUploadArea.classList.remove('border-primary', 'bg-primary-50');
+            handleFiles(e.dataTransfer.files);
+        });
+
+        photoInput.addEventListener('change', (e) => {
+            handleFiles(e.target.files);
+        });
+
+        function handleFiles(files) {
+            photoPreview.innerHTML = '';
+            photoPreview.classList.remove('hidden');
+            
+            Array.from(files).slice(0, 5).forEach((file, index) => {
+                if (file.type.startsWith('image/')) {
+                    const reader = new FileReader();
+                    reader.onload = (e) => {
+                        const div = document.createElement('div');
+                        div.className = 'relative group';
+                        div.innerHTML = `
+                            <img src="${e.target.result}" alt="Shoe photo ${index + 1}" class="w-full h-24 object-cover rounded-lg">
+                            <button class="absolute top-1 right-1 bg-error text-white rounded-full w-6 h-6 flex items-center justify-center text-xs opacity-0 group-hover:opacity-100 transition-opacity" onclick="this.parentElement.remove()">×</button>
+                        `;
+                        photoPreview.appendChild(div);
+                    };
+                    reader.readAsDataURL(file);
+                }
+            });
+        }
+
+        function collectShoeData() {
+            bookingData.shoes = {
+                brand: document.getElementById('shoe-brand').value,
+                type: document.getElementById('shoe-type').value,
+                material: document.getElementById('shoe-material').value,
+                color: document.getElementById('shoe-color').value,
+                pairs: document.getElementById('shoe-pairs').value,
+                issues: document.getElementById('shoe-issues').value,
+                specialInstructions: document.getElementById('special-instructions').value
+            };
+        }
+
+        function collectContactAndScheduleData() {
+            bookingData.contact = {
+                name: document.getElementById('customer-name').value,
+                phone: document.getElementById('customer-phone').value,
+                whatsapp: document.getElementById('customer-whatsapp').value,
+                email: document.getElementById('customer-email').value,
+                pickupAddress: document.getElementById('pickup-address').value,
+                deliveryAddress: document.getElementById('delivery-address').value
+            };
+
+            bookingData.schedule = {
+                area: document.getElementById('pickup-area').value,
+                date: document.getElementById('pickup-date').value,
+                timeSlot: document.querySelector('input[name="time-slot"]:checked')?.value
+            };
+        }
+
+        function populateConfirmationStep() {
+            // Service Summary
+            const servicesContainer = document.getElementById('selected-services');
+            servicesContainer.innerHTML = '';
+            
+            bookingData.options.forEach(option => {
+                const div = document.createElement('div');
+                div.className = 'flex justify-between items-center p-3 bg-white rounded-lg';
+                div.innerHTML = `
+                    <span class="font-semibold text-primary">${option.name.replace('-', ' ').replace(/\b\w/g, l => l.toUpperCase())}</span>
+                    <span class="text-accent font-bold">₹${option.price}</span>
+                `;
+                servicesContainer.appendChild(div);
+            });
+
+            bookingData.addons.forEach(addon => {
+                const div = document.createElement('div');
+                div.className = 'flex justify-between items-center p-3 bg-white rounded-lg';
+                div.innerHTML = `
+                    <span class="font-semibold text-primary">${addon.name.replace('-', ' ').replace(/\b\w/g, l => l.toUpperCase())}</span>
+                    <span class="text-accent font-bold">₹${addon.price}</span>
+                `;
+                servicesContainer.appendChild(div);
+            });
+
+            // Shoe Summary
+            const shoeContainer = document.getElementById('shoe-summary');
+            shoeContainer.innerHTML = `
+                <div><strong>Brand:</strong> ${bookingData.shoes.brand || 'Not specified'}</div>
+                <div><strong>Type:</strong> ${bookingData.shoes.type || 'Not specified'}</div>
+                <div><strong>Material:</strong> ${bookingData.shoes.material || 'Not specified'}</div>
+                <div><strong>Color:</strong> ${bookingData.shoes.color || 'Not specified'}</div>
+                <div><strong>Pairs:</strong> ${bookingData.shoes.pairs || 1}</div>
+                <div><strong>Issues:</strong> ${bookingData.shoes.issues || 'None specified'}</div>
+            `;
+
+            // Schedule Summary
+            const scheduleContainer = document.getElementById('schedule-summary');
+            scheduleContainer.innerHTML = `
+                <div><strong>Area:</strong> ${bookingData.schedule.area || 'Not selected'}</div>
+                <div><strong>Date:</strong> ${bookingData.schedule.date || 'Not selected'}</div>
+                <div><strong>Time:</strong> ${bookingData.schedule.timeSlot || 'Not selected'}</div>
+            `;
+
+            // Contact Summary
+            const contactContainer = document.getElementById('contact-summary');
+            contactContainer.innerHTML = `
+                <div><strong>Name:</strong> ${bookingData.contact.name}</div>
+                <div><strong>Phone:</strong> ${bookingData.contact.phone}</div>
+                <div><strong>Email:</strong> ${bookingData.contact.email || 'Not provided'}</div>
+                <div><strong>Pickup Address:</strong> ${bookingData.contact.pickupAddress}</div>
+            `;
+
+            // Price Breakdown
+            const priceContainer = document.getElementById('price-breakdown');
+            priceContainer.innerHTML = '';
+            
+            bookingData.options.forEach(option => {
+                const div = document.createElement('div');
+                div.className = 'flex justify-between text-sm';
+                div.innerHTML = `
+                    <span>${option.name.replace('-', ' ').replace(/\b\w/g, l => l.toUpperCase())}</span>
+                    <span>₹${option.price}</span>
+                `;
+                priceContainer.appendChild(div);
+            });
+
+            bookingData.addons.forEach(addon => {
+                const div = document.createElement('div');
+                div.className = 'flex justify-between text-sm';
+                div.innerHTML = `
+                    <span>${addon.name.replace('-', ' ').replace(/\b\w/g, l => l.toUpperCase())}</span>
+                    <span>₹${addon.price}</span>
+                `;
+                priceContainer.appendChild(div);
+            });
+
+            updateTotalPrice();
+        }
+
+        // Terms agreement
+        document.getElementById('terms-agreement').addEventListener('change', (e) => {
+            const confirmBtn = document.getElementById('confirm-booking');
+            confirmBtn.disabled = !e.target.checked;
+        });
+
+        // Same address checkbox
+        document.getElementById('same-address').addEventListener('change', (e) => {
+            const deliveryAddress = document.getElementById('delivery-address');
+            const pickupAddress = document.getElementById('pickup-address');
+            
+            if (e.target.checked) {
+                deliveryAddress.value = pickupAddress.value;
+                deliveryAddress.disabled = true;
+            } else {
+                deliveryAddress.disabled = false;
+            }
+        });
+
+        // Confirm booking
+        document.getElementById('confirm-booking').addEventListener('click', () => {
+            // Simulate booking confirmation
+            const bookingId = 'MB' + new Date().getFullYear() + String(Math.floor(Math.random() * 10000)).padStart(4, '0');
+            document.getElementById('booking-id').textContent = bookingId;
+            
+            const pickupDate = new Date(bookingData.schedule.date);
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('confirmed-pickup').textContent = 
+                `${pickupDate.toLocaleDateString('en-US', options)}, ${getTimeSlotText(bookingData.schedule.timeSlot)}`;
+            
+            // Show success modal
+            document.getElementById('success-modal').classList.remove('hidden');
+        });
+
+        function getTimeSlotText(slot) {
+            const slots = {
+                'morning': '9 AM - 12 PM',
+                'afternoon': '12 PM - 4 PM',
+                'evening': '4 PM - 7 PM',
+                'flexible': 'Flexible'
+            };
+            return slots[slot] || 'Not specified';
+        }
+
+        // Success modal handlers
+        document.getElementById('view-dashboard').addEventListener('click', () => {
+            window.location.href = 'customer_dashboard.html';
+        });
+
+        document.getElementById('close-success').addEventListener('click', () => {
+            document.getElementById('success-modal').classList.add('hidden');
+            // Reset form and go back to step 1
+            currentStep = 0;
+            showStep(currentStep);
+            // Reset booking data
+            bookingData = {
+                service: null,
+                options: [],
+                addons: [],
+                shoes: {},
+                schedule: {},
+                contact: {},
+                totalPrice: 0
+            };
+        });
+
+        // Initialize
+        showStep(0);
+    </script>
+</body>
+</html>

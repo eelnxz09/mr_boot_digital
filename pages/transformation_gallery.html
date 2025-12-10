@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transformation Gallery - MR BOOT Digital | Before & After Shoe Restoration Showcase</title>
+    <meta name="description" content="Witness the artistry of MR BOOT's shoe restoration through our transformation gallery. See dramatic before/after results of our craftsmanship in Pune." />
+    <link rel="stylesheet" href="../css/main.css" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fmrbootdi1244back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-craft sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="homepage.html" class="flex items-center space-x-2">
+                        <svg class="w-10 h-10 text-primary" viewBox="0 0 40 40" fill="currentColor">
+                            <path d="M8 32c0-2.2 1.8-4 4-4h16c2.2 0 4 1.8 4 4v4H8v-4z"/>
+                            <path d="M10 28h20c1.1 0 2-.9 2-2V14c0-1.1-.9-2-2-2H10c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2z"/>
+                            <circle cx="20" cy="8" r="4"/>
+                        </svg>
+                        <span class="font-playfair font-bold text-xl text-primary">MR BOOT</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors duration-300 px-3 py-2">Home</a>
+                        <a href="service_portfolio.html" class="text-text-secondary hover:text-primary transition-colors duration-300 px-3 py-2">Services</a>
+                        <a href="transformation_gallery.html" class="text-primary font-semibold border-b-2 border-primary px-3 py-2">Gallery</a>
+                        <a href="about_our_craft.html" class="text-text-secondary hover:text-primary transition-colors duration-300 px-3 py-2">Our Craft</a>
+                        <a href="contact_location.html" class="text-text-secondary hover:text-primary transition-colors duration-300 px-3 py-2">Contact</a>
+                        <a href="customer_dashboard.html" class="text-text-secondary hover:text-primary transition-colors duration-300 px-3 py-2">Dashboard</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text-secondary hover:text-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-secondary-200">
+                    <a href="homepage.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Home</a>
+                    <a href="service_portfolio.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Services</a>
+                    <a href="transformation_gallery.html" class="block px-3 py-2 text-primary font-semibold">Gallery</a>
+                    <a href="about_our_craft.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Our Craft</a>
+                    <a href="contact_location.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Contact</a>
+                    <a href="customer_dashboard.html" class="block px-3 py-2 text-text-secondary hover:text-primary">Dashboard</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-secondary-100 py-16 lg:py-24">
+        <div class="absolute inset-0 bg-black opacity-5"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6">
+                Transformation Gallery
+            </h1>
+            <p class="text-lg md:text-xl text-text-secondary mb-8 max-w-3xl mx-auto">
+                Witness the artistry that brings beloved footwear back to life. Each transformation tells a story of craftsmanship, dedication, and the magic of restoration.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="service_portfolio.html" class="btn-primary">
+                    Book Your Transformation
+                </a>
+                <a href="about_our_craft.html" class="btn-secondary">
+                    Learn Our Process
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="py-8 bg-white border-b border-secondary-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-6 items-center justify-between">
+                <!-- Search Bar -->
+                <div class="relative flex-1 max-w-md">
+                    <input type="text" id="gallery-search" placeholder="Search transformations..." class="w-full pl-10 pr-4 py-3 border border-secondary-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" />
+                    <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    </svg>
+                </div>
+
+                <!-- Filter Buttons -->
+                <div class="flex flex-wrap gap-3">
+                    <button class="filter-btn active" data-filter="all">
+                        All Transformations
+                    </button>
+                    <button class="filter-btn" data-filter="restoration">
+                        Restoration
+                    </button>
+                    <button class="filter-btn" data-filter="custom">
+                        Custom Creation
+                    </button>
+                    <button class="filter-btn" data-filter="specialty">
+                        Specialty Care
+                    </button>
+                </div>
+
+                <!-- Material Filter -->
+                <div class="flex gap-2">
+                    <select id="material-filter" class="px-4 py-2 border border-secondary-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        <option value="all">All Materials</option>
+                        <option value="leather">Leather</option>
+                        <option value="suede">Suede</option>
+                        <option value="canvas">Canvas</option>
+                        <option value="patent">Patent Leather</option>
+                    </select>
+                    <button id="reset-filters" class="px-4 py-2 text-text-secondary hover:text-primary transition-colors">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Transformation -->
+    <section class="py-16 bg-gradient-to-br from-secondary-50 to-primary-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-3xl md:text-4xl font-bold text-primary mb-4">
+                    Featured Transformation
+                </h2>
+                <p class="text-lg text-text-secondary">
+                    This month's most remarkable restoration story
+                </p>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-craft-xl overflow-hidden">
+                <div class="grid lg:grid-cols-2 gap-8 p-8">
+                    <!-- Before/After Images -->
+                    <div class="space-y-6">
+                        <div class="relative">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="text-center">
+                                    <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=2864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Before restoration - vintage Oxford shoes" class="w-full h-48 object-cover rounded-lg shadow-craft" loading="lazy" onerror="this.src='https://images.pexels.com/photos/267301/pexels-photo-267301.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                    <p class="text-sm font-semibold text-text-secondary mt-2">BEFORE</p>
+                                </div>
+                                <div class="text-center">
+                                    <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=2912&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="After restoration - pristine Oxford shoes" class="w-full h-48 object-cover rounded-lg shadow-craft" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/03/27/22/16/fashion-1284496_1280.jpg'; this.onerror=null;" />
+                                    <p class="text-sm font-semibold text-accent mt-2">AFTER</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Video Preview -->
+                        <div class="relative bg-primary-100 rounded-lg overflow-hidden">
+                            <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Time-lapse restoration process video thumbnail" class="w-full h-32 object-cover" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                                <button class="bg-white bg-opacity-90 rounded-full p-3 hover:bg-opacity-100 transition-all">
+                                    <svg class="w-6 h-6 text-primary ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M8 5v14l11-7z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="absolute bottom-2 left-2 bg-black bg-opacity-70 text-white px-2 py-1 rounded text-xs">
+                                Watch Process: 2:34
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Story Content -->
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="font-playfair text-2xl font-bold text-primary mb-2">
+                                Grandfather's Wedding Oxfords
+                            </h3>
+                            <div class="flex items-center space-x-4 text-sm text-text-secondary mb-4">
+                                <span class="bg-accent-100 text-accent-800 px-2 py-1 rounded">Restoration</span>
+                                <span class="bg-secondary-100 text-secondary-800 px-2 py-1 rounded">Leather</span>
+                                <span>Completed: July 2025</span>
+                            </div>
+                        </div>
+
+                        <div class="prose prose-sm max-w-none">
+                            <p class="text-text-secondary leading-relaxed">
+                                "These Oxford shoes belonged to my grandfather, worn on his wedding day in 1952. After 70+ years, they were cracked, faded, and seemed beyond repair. The sentimental value was immeasurable—they represented a legacy I wanted to preserve for future generations."
+                            </p>
+                            <p class="text-text-secondary leading-relaxed">
+                                <strong>Customer:</strong> Arjun Mehta, Koregaon Park
+                            </p>
+                        </div>
+
+                        <!-- Technical Details -->
+                        <div class="bg-surface rounded-lg p-4">
+                            <h4 class="font-semibold text-primary mb-3">Restoration Process</h4>
+                            <ul class="space-y-2 text-sm text-text-secondary">
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Complete sole replacement with period-appropriate materials
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Leather reconditioning and crack repair
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Original brown color restoration
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Hand-stitched reinforcement of stress points
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Pricing & Timeline -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="text-center p-4 bg-primary-50 rounded-lg">
+                                <div class="text-2xl font-bold text-primary">₹2,499</div>
+                                <div class="text-sm text-text-secondary">Total Investment</div>
+                            </div>
+                            <div class="text-center p-4 bg-accent-50 rounded-lg">
+                                <div class="text-2xl font-bold text-accent">12 Days</div>
+                                <div class="text-sm text-text-secondary">Completion Time</div>
+                            </div>
+                        </div>
+
+                        <a href="service_portfolio.html" class="btn-primary w-full text-center">
+                            Start Your Transformation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transformation Grid -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-3xl md:text-4xl font-bold text-primary mb-4">
+                    Recent Transformations
+                </h2>
+                <p class="text-lg text-text-secondary">
+                    Explore our latest restoration and custom creation projects
+                </p>
+            </div>
+
+            <!-- Transformation Cards Grid -->
+            <div id="transformation-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Transformation Card 1 -->
+                <div class="transformation-card bg-surface rounded-xl overflow-hidden shadow-craft hover:shadow-craft-lg transition-all duration-300" data-category="restoration" data-material="leather">
+                    <div class="relative group">
+                        <div class="grid grid-cols-2 h-48">
+                            <div class="relative overflow-hidden">
+                                <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Before - worn leather boots" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                <div class="absolute bottom-2 left-2 bg-black bg-opacity-70 text-white px-2 py-1 rounded text-xs">
+                                    BEFORE
+                                </div>
+                            </div>
+                            <div class="relative overflow-hidden">
+                                <img src="https://images.pixabay.com/photo/2016/03/27/22/16/fashion-1284496_1280.jpg" alt="After - restored leather boots" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                <div class="absolute bottom-2 right-2 bg-accent bg-opacity-90 text-white px-2 py-1 rounded text-xs">
+                                    AFTER
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Hover Overlay -->
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
+                            <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-center">
+                                <svg class="w-8 h-8 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                </svg>
+                                <p class="text-sm">View Details</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-playfair text-lg font-semibold text-primary">Designer Boot Revival</h3>
+                            <div class="flex space-x-1">
+                                <span class="bg-primary-100 text-primary-800 px-2 py-1 rounded text-xs">Restoration</span>
+                                <span class="bg-secondary-100 text-secondary-800 px-2 py-1 rounded text-xs">Leather</span>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary text-sm mb-4">
+                            Premium leather boots restored with sole replacement and waterproof treatment. Customer: Priya S., Baner
+                        </p>
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-accent font-semibold">₹1,899</span>
+                            <span class="text-text-secondary">8 days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Transformation Card 2 -->
+                <div class="transformation-card bg-surface rounded-xl overflow-hidden shadow-craft hover:shadow-craft-lg transition-all duration-300" data-category="custom" data-material="leather">
+                    <div class="relative group">
+                        <div class="grid grid-cols-2 h-48">
+                            <div class="relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=2864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Before - design sketch" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pexels.com/photos/267301/pexels-photo-267301.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                <div class="absolute bottom-2 left-2 bg-black bg-opacity-70 text-white px-2 py-1 rounded text-xs">
+                                    DESIGN
+                                </div>
+                            </div>
+                            <div class="relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=2912&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="After - custom Oxford shoes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/03/27/22/16/fashion-1284496_1280.jpg'; this.onerror=null;" />
+                                <div class="absolute bottom-2 right-2 bg-accent bg-opacity-90 text-white px-2 py-1 rounded text-xs">
+                                    CREATED
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Hover Overlay -->
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
+                            <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-center">
+                                <svg class="w-8 h-8 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                </svg>
+                                <p class="text-sm">View Details</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-playfair text-lg font-semibold text-primary">Bespoke Oxford Creation</h3>
+                            <div class="flex space-x-1">
+                                <span class="bg-accent-100 text-accent-800 px-2 py-1 rounded text-xs">Custom</span>
+                                <span class="bg-secondary-100 text-secondary-800 px-2 py-1 rounded text-xs">Leather</span>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary text-sm mb-4">
+                            Hand-crafted Oxford shoes with custom fitting and premium leather selection. Customer: Vikram D., Hinjewadi
+                        </p>
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-accent font-semibold">₹6,999</span>
+                            <span class="text-text-secondary">21 days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Transformation Card 3 -->
+                <div class="transformation-card bg-surface rounded-xl overflow-hidden shadow-craft hover:shadow-craft-lg transition-all duration-300" data-category="specialty" data-material="suede">
+                    <div class="relative group">
+                        <div class="grid grid-cols-2 h-48">
+                            <div class="relative overflow-hidden">
+                                <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Before - stained suede shoes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                <div class="absolute bottom-2 left-2 bg-black bg-opacity-70 text-white px-2 py-1 rounded text-xs">
+                                    BEFORE
+                                </div>
+                            </div>
+                            <div class="relative overflow-hidden">
+                                <img src="https://images.pixabay.com/photo/2016/03/27/22/16/fashion-1284496_1280.jpg" alt="After - cleaned suede shoes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                <div class="absolute bottom-2 right-2 bg-accent bg-opacity-90 text-white px-2 py-1 rounded text-xs">
+                                    AFTER
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Hover Overlay -->
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
+                            <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-center">
+                                <svg class="w-8 h-8 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                </svg>
+                                <p class="text-sm">View Details</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-playfair text-lg font-semibold text-primary">Suede Stain Removal</h3>
+                            <div class="flex space-x-1">
+                                <span class="bg-success-100 text-success-800 px-2 py-1 rounded text-xs">Specialty</span>
+                                <span class="bg-secondary-100 text-secondary-800 px-2 py-1 rounded text-xs">Suede</span>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary text-sm mb-4">
+                            Professional suede cleaning with stain removal and texture restoration. Customer: Anita K., Wakad
+                        </p>
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-accent font-semibold">₹899</span>
+                            <span class="text-text-secondary">5 days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Transformation Card 4 -->
+                <div class="transformation-card bg-surface rounded-xl overflow-hidden shadow-craft hover:shadow-craft-lg transition-all duration-300" data-category="restoration" data-material="canvas">
+                    <div class="relative group">
+                        <div class="grid grid-cols-2 h-48">
+                            <div class="relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=2864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Before - worn canvas sneakers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pexels.com/photos/267301/pexels-photo-267301.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                <div class="absolute bottom-2 left-2 bg-black bg-opacity-70 text-white px-2 py-1 rounded text-xs">
+                                    BEFORE
+                                </div>
+                            </div>
+                            <div class="relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=2912&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="After - restored canvas sneakers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/03/27/22/16/fashion-1284496_1280.jpg'; this.onerror=null;" />
+                                <div class="absolute bottom-2 right-2 bg-accent bg-opacity-90 text-white px-2 py-1 rounded text-xs">
+                                    AFTER
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Hover Overlay -->
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
+                            <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-center">
+                                <svg class="w-8 h-8 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                </svg>
+                                <p class="text-sm">View Details</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-playfair text-lg font-semibold text-primary">Vintage Sneaker Refresh</h3>
+                            <div class="flex space-x-1">
+                                <span class="bg-primary-100 text-primary-800 px-2 py-1 rounded text-xs">Restoration</span>
+                                <span class="bg-secondary-100 text-secondary-800 px-2 py-1 rounded text-xs">Canvas</span>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary text-sm mb-4">
+                            Deep cleaning and sole whitening for vintage canvas sneakers. Customer: Rahul M., Kothrud
+                        </p>
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-accent font-semibold">₹699</span>
+                            <span class="text-text-secondary">4 days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Transformation Card 5 -->
+                <div class="transformation-card bg-surface rounded-xl overflow-hidden shadow-craft hover:shadow-craft-lg transition-all duration-300" data-category="custom" data-material="patent">
+                    <div class="relative group">
+                        <div class="grid grid-cols-2 h-48">
+                            <div class="relative overflow-hidden">
+                                <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Before - design concept" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                <div class="absolute bottom-2 left-2 bg-black bg-opacity-70 text-white px-2 py-1 rounded text-xs">
+                                    CONCEPT
+                                </div>
+                            </div>
+                            <div class="relative overflow-hidden">
+                                <img src="https://images.pixabay.com/photo/2016/03/27/22/16/fashion-1284496_1280.jpg" alt="After - custom patent leather heels" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                                <div class="absolute bottom-2 right-2 bg-accent bg-opacity-90 text-white px-2 py-1 rounded text-xs">
+                                    CREATED
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Hover Overlay -->
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
+                            <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-center">
+                                <svg class="w-8 h-8 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                </svg>
+                                <p class="text-sm">View Details</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-playfair text-lg font-semibold text-primary">Custom Patent Heels</h3>
+                            <div class="flex space-x-1">
+                                <span class="bg-accent-100 text-accent-800 px-2 py-1 rounded text-xs">Custom</span>
+                                <span class="bg-secondary-100 text-secondary-800 px-2 py-1 rounded text-xs">Patent</span>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary text-sm mb-4">
+                            Bespoke patent leather heels with custom heel height and color matching. Customer: Meera S., Deccan
+                        </p>
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-accent font-semibold">₹4,299</span>
+                            <span class="text-text-secondary">18 days</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Transformation Card 6 -->
+                <div class="transformation-card bg-surface rounded-xl overflow-hidden shadow-craft hover:shadow-craft-lg transition-all duration-300" data-category="specialty" data-material="leather">
+                    <div class="relative group">
+                        <div class="grid grid-cols-2 h-48">
+                            <div class="relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=2864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Before - faded leather shoes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pexels.com/photos/267301/pexels-photo-267301.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                <div class="absolute bottom-2 left-2 bg-black bg-opacity-70 text-white px-2 py-1 rounded text-xs">
+                                    BEFORE
+                                </div>
+                            </div>
+                            <div class="relative overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=2912&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="After - color restored shoes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/03/27/22/16/fashion-1284496_1280.jpg'; this.onerror=null;" />
+                                <div class="absolute bottom-2 right-2 bg-accent bg-opacity-90 text-white px-2 py-1 rounded text-xs">
+                                    AFTER
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Hover Overlay -->
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-center justify-center">
+                            <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-white text-center">
+                                <svg class="w-8 h-8 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+                                </svg>
+                                <p class="text-sm">View Details</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="font-playfair text-lg font-semibold text-primary">Color Restoration</h3>
+                            <div class="flex space-x-1">
+                                <span class="bg-success-100 text-success-800 px-2 py-1 rounded text-xs">Specialty</span>
+                                <span class="bg-secondary-100 text-secondary-800 px-2 py-1 rounded text-xs">Leather</span>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary text-sm mb-4">
+                            Professional color restoration and leather conditioning for faded formal shoes. Customer: Suresh P., Viman Nagar
+                        </p>
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-accent font-semibold">₹1,299</span>
+                            <span class="text-text-secondary">6 days</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button id="load-more-btn" class="btn-secondary">
+                    Load More Transformations
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Stories Section -->
+    <section class="py-16 bg-gradient-to-br from-secondary-50 to-primary-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-3xl md:text-4xl font-bold text-primary mb-4">
+                    Customer Stories
+                </h2>
+                <p class="text-lg text-text-secondary">
+                    Real experiences from our satisfied customers
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Story 1 -->
+                <div class="bg-white rounded-xl p-8 shadow-craft hover:shadow-craft-lg transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Customer Amit Patel" class="w-16 h-16 rounded-full object-cover mr-4" loading="lazy" onerror="this.src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-playfair text-xl font-semibold text-primary">Amit Patel</h4>
+                            <p class="text-text-secondary">Software Engineer, Koregaon Park</p>
+                            <div class="flex mt-1">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <blockquote class="text-text-secondary italic mb-4">
+                        "I brought my father's 30-year-old leather shoes to MR BOOT, thinking they were beyond repair. Rajesh and his team worked magic—they look better than when they were new! The sentimental value is priceless, and the craftsmanship is exceptional."
+                    </blockquote>
+                    <div class="text-sm text-text-secondary">
+                        <strong>Service:</strong> Complete Restoration • <strong>Duration:</strong> 12 days • <strong>Investment:</strong> ₹2,499
+                    </div>
+                </div>
+
+                <!-- Story 2 -->
+                <div class="bg-white rounded-xl p-8 shadow-craft hover:shadow-craft-lg transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Customer Priya Sharma" class="w-16 h-16 rounded-full object-cover mr-4" loading="lazy" onerror="this.src='https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-playfair text-xl font-semibold text-primary">Priya Sharma</h4>
+                            <p class="text-text-secondary">Marketing Manager, Baner</p>
+                            <div class="flex mt-1">
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                                <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <blockquote class="text-text-secondary italic mb-4">
+                        "I needed custom heels for my wedding that would match my lehenga perfectly. MR BOOT created the most beautiful pair—comfortable, elegant, and exactly what I envisioned. The attention to detail and personal service was outstanding."
+                    </blockquote>
+                    <div class="text-sm text-text-secondary">
+                        <strong>Service:</strong> Custom Creation • <strong>Duration:</strong> 18 days • <strong>Investment:</strong> ₹4,299
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Integration -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-3xl md:text-4xl font-bold text-primary mb-4">
+                    Follow Our Journey
+                </h2>
+                <p class="text-lg text-text-secondary mb-6">
+                    See the latest transformations and customer stories on social media
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="javascript:void(0)" class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary-600 transition-colors">
+                        Follow on Instagram
+                    </a>
+                    <a href="javascript:void(0)" class="bg-secondary text-primary px-6 py-3 rounded-lg hover:bg-secondary-600 transition-colors">
+                        Like on Facebook
+                    </a>
+                </div>
+            </div>
+
+            <!-- Social Media Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="aspect-square bg-surface rounded-lg overflow-hidden shadow-craft hover:shadow-craft-lg transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=2912&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Instagram post - restored Oxford shoes" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pexels.com/photos/267301/pexels-photo-267301.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                </div>
+                <div class="aspect-square bg-surface rounded-lg overflow-hidden shadow-craft hover:shadow-craft-lg transition-all duration-300">
+                    <img src="https://images.pixabay.com/photo/2016/03/27/22/16/fashion-1284496_1280.jpg" alt="Instagram post - custom boots" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                </div>
+                <div class="aspect-square bg-surface rounded-lg overflow-hidden shadow-craft hover:shadow-craft-lg transition-all duration-300">
+                    <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Instagram post - workshop process" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                </div>
+                <div class="aspect-square bg-surface rounded-lg overflow-hidden shadow-craft hover:shadow-craft-lg transition-all duration-300">
+                    <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?q=80&w=2864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Instagram post - satisfied customer" class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pexels.com/photos/267301/pexels-photo-267301.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-primary to-primary-700">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-playfair text-3xl md:text-4xl font-bold text-white mb-4">
+                Ready to Create Your Own Transformation Story?
+            </h2>
+            <p class="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
+                Join hundreds of satisfied customers who have experienced the magic of expert craftsmanship
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="service_portfolio.html" class="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-primary-50 transition-colors duration-300">
+                    Book Your Service
+                </a>
+                <a href="contact_location.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-colors duration-300">
+                    Get Free Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-8 h-8 text-accent" viewBox="0 0 40 40" fill="currentColor">
+                            <path d="M8 32c0-2.2 1.8-4 4-4h16c2.2 0 4 1.8 4 4v4H8v-4z"/>
+                            <path d="M10 28h20c1.1 0 2-.9 2-2V14c0-1.1-.9-2-2-2H10c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2z"/>
+                            <circle cx="20" cy="8" r="4"/>
+                        </svg>
+                        <span class="font-playfair font-bold text-xl">MR BOOT</span>
+                    </div>
+                    <p class="text-primary-200 mb-4">
+                        Pune's premier destination for shoe restoration artistry and custom footwear creation.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-primary-300 hover:text-accent transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-primary-300 hover:text-accent transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-primary-300 hover:text-accent transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001 12.017.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="font-playfair text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="service_portfolio.html" class="text-primary-300 hover:text-accent transition-colors">Shoe Laundry</a></li>
+                        <li><a href="service_portfolio.html" class="text-primary-300 hover:text-accent transition-colors">Repair & Restoration</a></li>
+                        <li><a href="service_portfolio.html" class="text-primary-300 hover:text-accent transition-colors">Custom Making</a></li>
+                        <li><a href="service_portfolio.html" class="text-primary-300 hover:text-accent transition-colors">Specialty Services</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-playfair text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="transformation_gallery.html" class="text-primary-300 hover:text-accent transition-colors">Gallery</a></li>
+                        <li><a href="about_our_craft.html" class="text-primary-300 hover:text-accent transition-colors">Our Craft</a></li>
+                        <li><a href="customer_dashboard.html" class="text-primary-300 hover:text-accent transition-colors">Dashboard</a></li>
+                        <li><a href="contact_location.html" class="text-primary-300 hover:text-accent transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Pune Service Areas -->
+                <div>
+                    <h3 class="font-playfair text-lg font-semibold mb-4">Pune Service Areas</h3>
+                    <ul class="space-y-2 text-primary-300">
+                        <li>Koregaon Park</li>
+                        <li>Baner</li>
+                        <li>Hinjewadi</li>
+                        <li>Wakad</li>
+                        <li>Kothrud</li>
+                        <li>Deccan</li>
+                    </ul>
+                    <div class="mt-4">
+                        <p class="text-primary-300 text-sm">📞 +91 98765 43210</p>
+                        <p class="text-primary-300 text-sm">📧 info@mrbootdigital.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-primary-800 mt-8 pt-8 text-center">
+                <p class="text-primary-300">
+                    © 2025 MR BOOT Digital. All Rights Reserved. | Crafted with ❤️ in Pune
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Filter functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const materialFilter = document.getElementById('material-filter');
+        const searchInput = document.getElementById('gallery-search');
+        const resetButton = document.getElementById('reset-filters');
+        const transformationCards = document.querySelectorAll('.transformation-card');
+
+        // Filter button styles
+        filterButtons.forEach(button => {
+            button.classList.add('px-4', 'py-2', 'rounded-lg', 'font-semibold', 'transition-all', 'duration-300');
+            if (button.classList.contains('active')) {
+                button.classList.add('bg-primary', 'text-white');
+            } else {
+                button.classList.add('bg-surface', 'text-text-secondary', 'hover:bg-primary-100', 'hover:text-primary');
+            }
+        });
+
+        // Filter by category
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Update active button
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('active', 'bg-primary', 'text-white');
+                    btn.classList.add('bg-surface', 'text-text-secondary');
+                });
+                button.classList.add('active', 'bg-primary', 'text-white');
+                button.classList.remove('bg-surface', 'text-text-secondary');
+
+                filterCards();
+            });
+        });
+
+        // Filter by material
+        materialFilter.addEventListener('change', filterCards);
+
+        // Search functionality
+        searchInput.addEventListener('input', filterCards);
+
+        // Reset filters
+        resetButton.addEventListener('click', () => {
+            // Reset category filter
+            filterButtons.forEach(btn => {
+                btn.classList.remove('active', 'bg-primary', 'text-white');
+                btn.classList.add('bg-surface', 'text-text-secondary');
+            });
+            filterButtons[0].classList.add('active', 'bg-primary', 'text-white');
+            filterButtons[0].classList.remove('bg-surface', 'text-text-secondary');
+
+            // Reset material filter
+            materialFilter.value = 'all';
+
+            // Reset search
+            searchInput.value = '';
+
+            // Show all cards
+            transformationCards.forEach(card => {
+                card.style.display = 'block';
+            });
+        });
+
+        function filterCards() {
+            const activeCategory = document.querySelector('.filter-btn.active').dataset.filter;
+            const selectedMaterial = materialFilter.value;
+            const searchTerm = searchInput.value.toLowerCase();
+
+            transformationCards.forEach(card => {
+                const cardCategory = card.dataset.category;
+                const cardMaterial = card.dataset.material;
+                const cardText = card.textContent.toLowerCase();
+
+                const categoryMatch = activeCategory === 'all' || cardCategory === activeCategory;
+                const materialMatch = selectedMaterial === 'all' || cardMaterial === selectedMaterial;
+                const searchMatch = searchTerm === '' || cardText.includes(searchTerm);
+
+                if (categoryMatch && materialMatch && searchMatch) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Load more functionality
+        const loadMoreBtn = document.getElementById('load-more-btn');
+        loadMoreBtn.addEventListener('click', () => {
+            // Simulate loading more transformations
+            loadMoreBtn.textContent = 'Loading...';
+            setTimeout(() => {
+                loadMoreBtn.textContent = 'Load More Transformations';
+                // In a real application, you would load more cards here
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

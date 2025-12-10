@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --color-primary: #8B4513; /* Rich leather brown - saddle-brown */
+  --color-primary-50: #FDF8F4; /* Very light brown */
+  --color-primary-100: #F5E6D3; /* Light brown */
+  --color-primary-200: #E8C5A0; /* Medium light brown */
+  --color-primary-300: #D4A574; /* Medium brown */
+  --color-primary-400: #B8824A; /* Medium dark brown */
+  --color-primary-500: #8B4513; /* Base leather brown */
+  --color-primary-600: #7A3C11; /* Dark brown */
+  --color-primary-700: #68330F; /* Darker brown */
+  --color-primary-800: #562A0D; /* Very dark brown */
+  --color-primary-900: #44210A; /* Deepest brown */
+
+  /* Secondary Colors */
+  --color-secondary: #D2B48C; /* Warm tan - tan */
+  --color-secondary-50: #FDFBF8; /* Very light tan */
+  --color-secondary-100: #F8F2E8; /* Light tan */
+  --color-secondary-200: #F0E4D1; /* Medium light tan */
+  --color-secondary-300: #E6D4B8; /* Medium tan */
+  --color-secondary-400: #DCC49F; /* Medium dark tan */
+  --color-secondary-500: #D2B48C; /* Base warm tan */
+  --color-secondary-600: #C5A373; /* Dark tan */
+  --color-secondary-700: #B8925A; /* Darker tan */
+  --color-secondary-800: #AB8141; /* Very dark tan */
+  --color-secondary-900: #9E7028; /* Deepest tan */
+
+  /* Accent Colors */
+  --color-accent: #DAA520; /* Refined gold - goldenrod */
+  --color-accent-50: #FEFCF7; /* Very light gold */
+  --color-accent-100: #FDF6E3; /* Light gold */
+  --color-accent-200: #FAECC0; /* Medium light gold */
+  --color-accent-300: #F6E19D; /* Medium gold */
+  --color-accent-400: #F2D67A; /* Medium dark gold */
+  --color-accent-500: #DAA520; /* Base refined gold */
+  --color-accent-600: #C4941D; /* Dark gold */
+  --color-accent-700: #AE831A; /* Darker gold */
+  --color-accent-800: #987217; /* Very dark gold */
+  --color-accent-900: #826114; /* Deepest gold */
+
+  /* Background Colors */
+  --color-background: #FEFEFE; /* Pure canvas - white */
+  --color-surface: #F8F6F3; /* Subtle warmth - warm-gray-50 */
+
+  /* Text Colors */
+  --color-text-primary: #2C1810; /* Deep brown - warm-gray-900 */
+  --color-text-secondary: #6B4E3D; /* Medium brown - warm-gray-600 */
+
+  /* Status Colors */
+  --color-success: #228B22; /* Forest green - forest-green */
+  --color-success-50: #F0FDF0; /* Very light green */
+  --color-success-100: #DCFCE7; /* Light green */
+  --color-success-200: #BBF7D0; /* Medium light green */
+  --color-success-300: #86EFAC; /* Medium green */
+  --color-success-400: #4ADE80; /* Medium dark green */
+  --color-success-500: #228B22; /* Base forest green */
+  --color-success-600: #1F7A1F; /* Dark green */
+  --color-success-700: #1C691C; /* Darker green */
+  --color-success-800: #195819; /* Very dark green */
+  --color-success-900: #164716; /* Deepest green */
+
+  --color-warning: #FF8C00; /* Warm orange - dark-orange */
+  --color-warning-50: #FFF7ED; /* Very light orange */
+  --color-warning-100: #FFEDD5; /* Light orange */
+  --color-warning-200: #FED7AA; /* Medium light orange */
+  --color-warning-300: #FDBA74; /* Medium orange */
+  --color-warning-400: #FB923C; /* Medium dark orange */
+  --color-warning-500: #FF8C00; /* Base warm orange */
+  --color-warning-600: #E67E00; /* Dark orange */
+  --color-warning-700: #CC7000; /* Darker orange */
+  --color-warning-800: #B36200; /* Very dark orange */
+  --color-warning-900: #995400; /* Deepest orange */
+
+  --color-error: #B22222; /* Deep red - fire-brick */
+  --color-error-50: #FEF2F2; /* Very light red */
+  --color-error-100: #FEE2E2; /* Light red */
+  --color-error-200: #FECACA; /* Medium light red */
+  --color-error-300: #FCA5A5; /* Medium red */
+  --color-error-400: #F87171; /* Medium dark red */
+  --color-error-500: #B22222; /* Base deep red */
+  --color-error-600: #A01F1F; /* Dark red */
+  --color-error-700: #8E1C1C; /* Darker red */
+  --color-error-800: #7C1919; /* Very dark red */
+  --color-error-900: #6A1616; /* Deepest red */
+}
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    color: var(--color-text-primary);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-inter font-semibold transition-all duration-300 ease-out hover:bg-primary-600 hover:shadow-lg;
+    box-shadow: 0 4px 12px rgba(139, 69, 19, 0.1);
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-primary px-6 py-3 rounded-lg font-inter font-semibold transition-all duration-300 ease-out hover:bg-secondary-600 hover:shadow-lg;
+    box-shadow: 0 4px 12px rgba(210, 180, 140, 0.1);
+  }
+
+  .card-shadow {
+    box-shadow: 0 4px 12px rgba(139, 69, 19, 0.1);
+  }
+
+  .form-input {
+    @apply border border-secondary-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 ease-out;
+  }
+}
